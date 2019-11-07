@@ -13,6 +13,7 @@
 		4DA5B2552374B278001CFA00 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DA5B2532374B278001CFA00 /* Main.storyboard */; };
 		4DA5B2572374B279001CFA00 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DA5B2562374B279001CFA00 /* Assets.xcassets */; };
 		4DA5B25A2374B279001CFA00 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DA5B2582374B279001CFA00 /* LaunchScreen.storyboard */; };
+		4DA5B2662374B6F7001CFA00 /* Counter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA5B2652374B6F7001CFA00 /* Counter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		4DA5B2562374B279001CFA00 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4DA5B2592374B279001CFA00 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4DA5B25B2374B279001CFA00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4DA5B2652374B6F7001CFA00 /* Counter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Counter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,48 @@
 		4DA5B24C2374B278001CFA00 /* Count Assistant */ = {
 			isa = PBXGroup;
 			children = (
-				4DA5B24D2374B278001CFA00 /* AppDelegate.swift */,
-				4DA5B24F2374B278001CFA00 /* SceneDelegate.swift */,
-				4DA5B2512374B278001CFA00 /* ViewController.swift */,
-				4DA5B2532374B278001CFA00 /* Main.storyboard */,
-				4DA5B2562374B279001CFA00 /* Assets.xcassets */,
-				4DA5B2582374B279001CFA00 /* LaunchScreen.storyboard */,
-				4DA5B25B2374B279001CFA00 /* Info.plist */,
+				4DA5B2632374B6D3001CFA00 /* Supporting Files */,
+				4DA5B2642374B6E5001CFA00 /* Modele */,
+				4DA5B2612374B6AF001CFA00 /* Controller */,
+				4DA5B2622374B6BD001CFA00 /* View */,
 			);
 			path = "Count Assistant";
+			sourceTree = "<group>";
+		};
+		4DA5B2612374B6AF001CFA00 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4DA5B2512374B278001CFA00 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		4DA5B2622374B6BD001CFA00 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4DA5B2532374B278001CFA00 /* Main.storyboard */,
+				4DA5B2582374B279001CFA00 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4DA5B2632374B6D3001CFA00 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4DA5B24D2374B278001CFA00 /* AppDelegate.swift */,
+				4DA5B24F2374B278001CFA00 /* SceneDelegate.swift */,
+				4DA5B2562374B279001CFA00 /* Assets.xcassets */,
+				4DA5B25B2374B279001CFA00 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4DA5B2642374B6E5001CFA00 /* Modele */ = {
+			isa = PBXGroup;
+			children = (
+				4DA5B2652374B6F7001CFA00 /* Counter.swift */,
+			);
+			path = Modele;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +173,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DA5B2662374B6F7001CFA00 /* Counter.swift in Sources */,
 				4DA5B2522374B278001CFA00 /* ViewController.swift in Sources */,
 				4DA5B24E2374B278001CFA00 /* AppDelegate.swift in Sources */,
 				4DA5B2502374B278001CFA00 /* SceneDelegate.swift in Sources */,
@@ -285,7 +321,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "Count Assistant/Info.plist";
+				INFOPLIST_FILE = "Count Assistant/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,7 +338,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "Count Assistant/Info.plist";
+				INFOPLIST_FILE = "Count Assistant/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
