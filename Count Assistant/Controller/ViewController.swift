@@ -16,25 +16,36 @@ class ViewController: UIViewController {
     @IBOutlet weak var number: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+
+        if count.assistant == 0 {
+            reset.isHidden = true
+        }
+        
+       let name = Notification.Name(rawValue: "countAssistant")
+        NotificationCenter.default.addObserver(self, selector: #selector(updateScreen), name: name, object: nil)
     }
-    var newScore = 0
+    
+    var count = Counter()
     
     @IBAction func addNumber(_ sender: Any) {
-      newScore += 1
-        number.text = ("\(newScore)")
+        count.addAssistant()
+    }
+    
+    @objc func updateScreen() {
+        number.text = ("\(count.assistant)")
+        if count.assistant == 0 {
+                   reset.isHidden = true
+        } else {
+            reset.isHidden = false
+        }
+               
     }
     
     @IBAction func deleteNumber(_ sender: Any) {
-        if newScore > 0 {
-            newScore -= 1
-            number.text = ("\(newScore)")
-        }
+        count.deleteAssistant()
     }
+    
     @IBAction func resetNumber(_ sender: Any) {
-        if newScore != 0 {
-            newScore = 0
-            number.text = ("\(newScore)")
-    }
+        count.reset()
   }
 }

@@ -9,5 +9,30 @@
 import Foundation
 
 class Counter {
+    var assistant = 0 {
+        didSet{
+            if assistant < 0 {
+                assistant = 0
+            }
+            let name = Notification.Name(rawValue: "countAssistant")
+            let notification = Notification(name: name)
+            NotificationCenter.default.post(notification)
+        }
+    }
+    
+    func addAssistant() {
+        
+        assistant += 1
+    }
+    
+    func deleteAssistant(){
+        assistant -= 1
+        
+    }
+    
+    func reset() {
+        assistant = 0
+    }
+    
     
 }
