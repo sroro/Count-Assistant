@@ -14,7 +14,19 @@
 		4DA5B2572374B279001CFA00 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DA5B2562374B279001CFA00 /* Assets.xcassets */; };
 		4DA5B25A2374B279001CFA00 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DA5B2582374B279001CFA00 /* LaunchScreen.storyboard */; };
 		4DA5B2662374B6F7001CFA00 /* Counter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA5B2652374B6F7001CFA00 /* Counter.swift */; };
+		94F522D323D20F8D00C82560 /* Count_AssistantTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F522D223D20F8D00C82560 /* Count_AssistantTests.swift */; };
+		94F522DB23D22A1900C82560 /* CounterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F522DA23D22A1900C82560 /* CounterTest.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		94F522D523D20F8D00C82560 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4DA5B2422374B278001CFA00 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4DA5B2492374B278001CFA00;
+			remoteInfo = "Count Assistant";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		4DA5B24A2374B278001CFA00 /* Count Assistant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Count Assistant.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -26,10 +38,21 @@
 		4DA5B2592374B279001CFA00 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4DA5B25B2374B279001CFA00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4DA5B2652374B6F7001CFA00 /* Counter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Counter.swift; sourceTree = "<group>"; };
+		94F522D023D20F8D00C82560 /* Count AssistantTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Count AssistantTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		94F522D223D20F8D00C82560 /* Count_AssistantTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Count_AssistantTests.swift; sourceTree = "<group>"; };
+		94F522D423D20F8D00C82560 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		94F522DA23D22A1900C82560 /* CounterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		4DA5B2472374B278001CFA00 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94F522CD23D20F8D00C82560 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -43,6 +66,7 @@
 			isa = PBXGroup;
 			children = (
 				4DA5B24C2374B278001CFA00 /* Count Assistant */,
+				94F522D123D20F8D00C82560 /* Count AssistantTests */,
 				4DA5B24B2374B278001CFA00 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -51,6 +75,7 @@
 			isa = PBXGroup;
 			children = (
 				4DA5B24A2374B278001CFA00 /* Count Assistant.app */,
+				94F522D023D20F8D00C82560 /* Count AssistantTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -102,6 +127,16 @@
 			path = Modele;
 			sourceTree = "<group>";
 		};
+		94F522D123D20F8D00C82560 /* Count AssistantTests */ = {
+			isa = PBXGroup;
+			children = (
+				94F522D223D20F8D00C82560 /* Count_AssistantTests.swift */,
+				94F522DA23D22A1900C82560 /* CounterTest.swift */,
+				94F522D423D20F8D00C82560 /* Info.plist */,
+			);
+			path = "Count AssistantTests";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -122,18 +157,40 @@
 			productReference = 4DA5B24A2374B278001CFA00 /* Count Assistant.app */;
 			productType = "com.apple.product-type.application";
 		};
+		94F522CF23D20F8D00C82560 /* Count AssistantTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 94F522D923D20F8D00C82560 /* Build configuration list for PBXNativeTarget "Count AssistantTests" */;
+			buildPhases = (
+				94F522CC23D20F8D00C82560 /* Sources */,
+				94F522CD23D20F8D00C82560 /* Frameworks */,
+				94F522CE23D20F8D00C82560 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				94F522D623D20F8D00C82560 /* PBXTargetDependency */,
+			);
+			name = "Count AssistantTests";
+			productName = "Count AssistantTests";
+			productReference = 94F522D023D20F8D00C82560 /* Count AssistantTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		4DA5B2422374B278001CFA00 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1110;
+				LastSwiftUpdateCheck = 1130;
 				LastUpgradeCheck = 1110;
 				ORGANIZATIONNAME = "Rodolphe Schnetzer";
 				TargetAttributes = {
 					4DA5B2492374B278001CFA00 = {
 						CreatedOnToolsVersion = 11.1;
+					};
+					94F522CF23D20F8D00C82560 = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = 4DA5B2492374B278001CFA00;
 					};
 				};
 			};
@@ -151,6 +208,7 @@
 			projectRoot = "";
 			targets = (
 				4DA5B2492374B278001CFA00 /* Count Assistant */,
+				94F522CF23D20F8D00C82560 /* Count AssistantTests */,
 			);
 		};
 /* End PBXProject section */
@@ -163,6 +221,13 @@
 				4DA5B25A2374B279001CFA00 /* LaunchScreen.storyboard in Resources */,
 				4DA5B2572374B279001CFA00 /* Assets.xcassets in Resources */,
 				4DA5B2552374B278001CFA00 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94F522CE23D20F8D00C82560 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -180,7 +245,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		94F522CC23D20F8D00C82560 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94F522DB23D22A1900C82560 /* CounterTest.swift in Sources */,
+				94F522D323D20F8D00C82560 /* Count_AssistantTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		94F522D623D20F8D00C82560 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4DA5B2492374B278001CFA00 /* Count Assistant */;
+			targetProxy = 94F522D523D20F8D00C82560 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		4DA5B2532374B278001CFA00 /* Main.storyboard */ = {
@@ -350,6 +432,46 @@
 			};
 			name = Release;
 		};
+		94F522D723D20F8D00C82560 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Count AssistantTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com-rodolphe.Count-AssistantTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Count Assistant.app/Count Assistant";
+			};
+			name = Debug;
+		};
+		94F522D823D20F8D00C82560 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Count AssistantTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com-rodolphe.Count-AssistantTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Count Assistant.app/Count Assistant";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -367,6 +489,15 @@
 			buildConfigurations = (
 				4DA5B25F2374B279001CFA00 /* Debug */,
 				4DA5B2602374B279001CFA00 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		94F522D923D20F8D00C82560 /* Build configuration list for PBXNativeTarget "Count AssistantTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				94F522D723D20F8D00C82560 /* Debug */,
+				94F522D823D20F8D00C82560 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
